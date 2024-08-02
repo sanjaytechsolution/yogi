@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Details</title>
+</head>
+<body>
+<form>
+your Name is:<p id="name"></p><br>
+your E-mail is:<p id="email"></p><br>
+your password is:<p id="password"></p><br>
+your num is:<p id="num"></p><br>
+your age is:<p id="age"></p><br>
+</form>
+<script>
+document.getElementById("name").innerHTML=localStorage.getItem("name");
+document.getElementById("email").innerHTML=localStorage.getItem("email");
+document.getElementById("password").innerHTML=localStorage.getItem("password");
+document.getElementById("num").innerHTML=localStorage.getItem("num");
+document.getElementById("age").innerHTML=localStorage.getItem("age");
+</script>
+</body>
+</html>

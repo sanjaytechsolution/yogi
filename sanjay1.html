@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>
+<p style="color:red;">Registration Form</p>
+Registration Form
+</title>
+<style>
+body{
+text-align:center;
+background-color:sky blue;
+}
+</style>
+<script>
+function getvalue(){
+var name=document.getElementById("name").value;
+var email=document.getElementById(" email").value;
+var password=document.getElementById("password").value;
+var mob=document.getElementById("mob").value;
+var age=document.getElementById("age").value;
+if(name==null||name=="")
+{alert("Name cannot be blank");
+return false;
+}
+else if(password,length<6)
+{alert("pss must be atleast 6 Character long");
+return false;
+}
+localStorege.setitem("name",name);
+localStorege.setitem("email",email);
+localStorege.setitem("password",password);
+localStorege.setitem("mob",mob);
+localStorege.setitem("age",age);
+return;
+}
+</script>
+</head>
+<body>
+<h1><u>
+Registration Form
+</u></h1>
+<form action="sanju.html"><b>
+Name<input type="textbox"id="name"placeholder="Name"><br><br>
+email<input type="email"id="email"name="email" placeholder="e-mail"><br><br>
+password<input type="password"id="pss"placeholder="password"><br><br>
+phone number<input type="tel"id="mob"name="phone"pattern="[0-9]{10}"requrid placeholder="xxxxx-xxxxx" ><br><br>
+age<input type="age"id="age"="age"><br><br>
+
+<input type=radio name="gender">Male
+<input type=radio name="gender">FeMale
+<br><br>
+
+<select id="college">
+<option>college</option>
+<option>Diploma</option>
+<option>Degree</option>
+<option>Enginering</option>
+</select>
+
+<select id="sem">
+<option>sem</option>
+<option>1st sem</option>
+<option>2nd sem</option>
+<option>3rd sem</option>
+<option>4th sem</option>
+<option>5th sem</option>
+<option>6th sem</option>
+</select>
+<br>
+
+<select id="country">
+<option  value="country">country</option>
+<option  value="India">India</option>
+<option  value="Srilank">Srilank</option>
+<option  value="Pakistna">Pkistna</option>
+<option  value="Aus">Aus</option>
+</select>
+
+<select id="state">
+<option  value="state">state</option>
+<option  value="kerla">kerla</option>
+<option  value="karnataka">karnataka</option>
+<option  value="tamilnadu">tamilnadu</option>
+<option  value="maharastra">maharastra</option>
+</select>
+
+<select id="city">
+<option  value="city">city</option>
+<option  value="ch nagar">ch nagar</option>
+<option  value="kollegala">kollegala</option>
+<option  value="mysuru">mysuru</option>
+<option  value="benglore">benglore</option>
+</select><br>
+
+<textarea>
+</textarea>
+<br>
+<input type=checkbox name="check">Accept All.<br><br>
+<input type="submit"value="submit" onclick="getvalue()">
+</form>
+</body>
+</html>
+
+
